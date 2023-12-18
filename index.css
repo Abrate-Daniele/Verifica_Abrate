@@ -1,0 +1,97 @@
+header{
+    text-shadow: -5px 5px 3px red;
+    font-size: 20pt;
+    font-family: monospace;
+    width: 1800px;
+    text-align: center;
+}
+article{
+    display: flex;
+}
+footer{
+    font-size: 15pt;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+/*#sfondo{
+    background-image: url("./img/ferroviaMod.jpg");
+    width: 2000px;
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}*/
+#treno{
+    background-image: url("./img/treno.svg");
+    width: 8500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    animation-name: treno;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes treno{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 11000px;
+    }
+    100%{
+        margin-left: -10000px;
+    }
+}
+#semaforo1{
+    background-image: url("./img/semRosso.png");
+    width: 107px;
+    height: 152px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-left: 0px;
+    animation-name: semaforo1;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes semaforo1{
+    0%{
+        background-image: url("./img/semRosso.png");
+    }
+    50%{
+        background-image: url("./img/semVerde.png");
+    }
+    100%{
+        background-image: url("./img/semRosso.png");
+    }
+}
+#semaforo2{
+    background-image: url("./img/semVerde.png");
+    width: 107px;
+    height: 152px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    transform: scaleX(-1);
+    margin-left: 1600px;
+    animation-name: semaforo2;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes semaforo2{
+    0%{
+        background-image: url("./img/semVerde.png");
+    }
+    50%{
+        background-image: url("./img/semRosso.png");
+    }
+    100%{
+        background-image: url("./img/semVerde.png");
+    }
+}
